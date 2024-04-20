@@ -1,0 +1,54 @@
+Prithvi Kota
+408-398-7813 | prithvikota96@gmail.com | linkedin.com/in/prithvi-k/ | github.com/prithvi002
+Education
+Virginia Tech Blacksburg, VA
+Master’s in Computer Science: GPA: 3.96/4 Jan 2023 – current
+Indian Institute of Technology, Madras Chennai, India
+Bachelor’s of Technology in Electrical Engineering Jul 2013 – May 2017
+Professional Experience
+ARC Visualization Intern May 2023 – Jan 2024
+ARC Lab, Virginia Tech Blacksburg, VA
+• Designed and developed a JavaScript-based 3D simulation model project funded by ONR and NSF, aiding in the
+simplified understanding of wireless concepts, resulting in a 2x increase in course participation
+• Led the conceptualization and execution of interactive exercises, enabling smooth parameter manipulation and
+rapid visualization of effects, driving a 50% decrease in response time and enhancing the learning experience.
+Software Engineer Oct 2020 – Dec 2022
+Infelearn Remote, India
+• Designed and built a dynamic push notification system customized for users, leading to a notable 2.5x surge in
+classroom engagement, employing Kafka to enable seamless real-time updates
+• Leveraged the HyperLogLog algorithm in the design and implementation of a memory-efficient view count system
+for videos and posts, achieving a substantial reduction of memory usage to 0.5%
+• Enhanced user account security through the incorporation of two-factor authentication, utilizing Twilio API for
+SMS authentication, and integrating OAuth 2.0 services for login functionality
+Software Engineer Jul 2017 – Oct 2018
+Amada Soft, India Chennai, India
+• Engineered and automated a QA testing framework for a CAD/CAM software that led to a significant reduction in
+weekly workload by 70 hours through the implementation of multithreading and SIMD methodologies.
+• Reduced bending sequence extraction time by 200% by crafting and developing an interactive platform for advanced
+similar part search algorithm, enabling visualization of related parts and extraction of bending sequences.
+Projects
+ShoreSync | Graduate Assistant, Virginia Tech Jan 2024 – current
+• Formulating an app for an NSF-funded project at VIMS, using citizen science to enhance shoreline data collection
+by 50x and enable citizen-driven GIS updates for informed shoreline management by local and state authorities
+• Managing a team of 4 to develop a prototype application using agile strategies for shoreline data and image
+collection with tagged GPS coordinates, aimed at reducing costs by 3x and validating field data
+Linear Quadratic Games Analysis | Graduate Research Assistant, Virginia Tech Mar 2023 – Dec 2023
+• Devised a novel algorithm that enhanced comprehension of linear-quadratic network games with strategic
+complements, transforming them into distance-minimizing quadratic programming problems
+• Strengthened research efficacy with 30+ Python simulations, significantly reducing theorem testing and validation
+time by 20 hours per week in the domains of game theory and graph theory
+Mass Scale Web Crawler Application| Intern, IFMR Capital May 2016 – Jul 2016
+• Builtawebcrawlerextracting1M+wordsdailyfromnewspapersaidingriskassessmentandportfoliomanagement
+• Reduced processing time by 2x and improved data accessibility through parsing algorithms and db integration
+• Deployed ML classifiers with 95% accuracy for news analysis, leveraging Google API for text translation, and R
+Shiny for visualization, including GIS mapping for spatial representation
+Technical Skills
+Languages/Database: Java, JavaScript, C++, Python, C#, R, MongoDB, Redis, MySQL, MATLAB
+Tools & Frameworks: Express.js, SpringBoot, Spring, node.js, Kafka, Docker, Prisma, X3DOM, MFC, Git, Docker,
+VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
+Libraries: React, Numpy, Pandas, Scikit-learn, SIMD, Shiny, JUnit, DirectX
+Achievements
+All India Rank 31 : UPSC Indian Engineering Services among 0.2 million+ applicants
+All India Rank 46 : Graduate Aptitude Test in Engineering among 0.8 million+ applicants
+All India Rank 239: IIT Joint Entrance Examination among 1.4 million applicants
+Chartered Financial Analyst(CFA) Level I: Cleared June 2018
