@@ -17,16 +17,32 @@ To run the backend application, follow these steps:
     $ pip install -r requirements.txt
     ```
 
-    This command will install all the necessary dependencies listed in the `requirements.txt` file.
-
 3. After installing the dependencies, you can then execute the backend application:
 
     ```bash
     $ python app.py
     ```
 
-    This command will start the backend application. Depending on your project's structure and entry point, you may need to adjust the command accordingly.
 
 
 
+## Running the Frontend Application
 
+To run the frontend application, follow these steps:
+
+1. Open a new terminal and navigate to the project directory using the `cd` command:
+
+    ```bash
+    $ cd Frontend/pdf-frontend
+    ```
+
+2. Once you're in the project directory, install the required dependencies (node modules) by running:
+
+    ```bash
+    $ npm install
+    ```
+3. After installing the dependencies, you can then start the frontend application using the following command:
+
+    ```bash
+    $ npm start
+    ```
