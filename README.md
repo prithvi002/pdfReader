@@ -3,14 +3,29 @@
 
 ## Running the Backend Application
 
-1. To run the backend application, open a new terminal and navigate to the project directory using the `cd` command:\n
-$ cd Backend/python-backend
+To run the backend application, follow these steps:
 
-2. Once you're in the project directory, install the required dependencies from the requirements.txt file. You can do this by running the following command:\n
-$ pip install -r requirements.txt
+1. Open a new terminal and navigate to the project directory using the `cd` command:
 
-3. After installing the dependencies, you can then execute the backend application\n
-$ python app.py
+    ```bash
+    $ cd Backend/python-backend
+    ```
+
+2. Once you're in the project directory, install the required dependencies from the `requirements.txt` file. You can do this by running the following command:
+
+    ```bash
+    $ pip install -r requirements.txt
+    ```
+
+    This command will install all the necessary dependencies listed in the `requirements.txt` file.
+
+3. After installing the dependencies, you can then execute the backend application:
+
+    ```bash
+    $ python app.py
+    ```
+
+    This command will start the backend application. Depending on your project's structure and entry point, you may need to adjust the command accordingly.
 
 
 
