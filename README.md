@@ -3,7 +3,9 @@
 ## Give the Open-ai key
 
 Open the config.py file and find the Config class. Replace 'your-key' with your OpenAI API key:
+```bash
 SECRET_KEY = 'your-key'
+```
 
 
 
