@@ -1,5 +1,26 @@
 #Project Title
 "Application to Read Custom PDFs and Answer Questions Using a Language Model"
+
+## Brief Description
+
+```bash
+Front-end = 'React'
+Back-end = 'Flask'
+Backend-Architecture:
+1. PDF Processing:
+    * PDF Text Extraction: Extracts text from PDFs.
+    * Text Splitting: Divides text into chunks.
+2. HuggingFace Word Embeddings:
+    * Convert Text to Vectors: Transforms text into numerical vectors.
+3. Vector Store (FAISS):
+    * Store and Retrieve Vectors: Efficiently stores and retrieves vectors for similarity search.
+4. Context and Session Management:
+    * Chat History: Saves conversation history for context.
+    * Chat Prompt: Template for guiding conversation flow.
+5. Large Language Model (LLM):
+    * Conversation Model: Utilizes a Large Language Model (LLM) for generating responses.
+
+```
 ## Give the Open-ai key
 
 Open the config.py file and find the Config class. Replace 'your-key' with your OpenAI API key:
