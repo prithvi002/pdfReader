@@ -34,7 +34,7 @@ def create_chain(vectorStore):
   )
 
   prompt = ChatPromptTemplate.from_messages([
-  ("system",), Config.PROMPT,
+  ("system",Config.PROMPT),
   MessagesPlaceholder(variable_name="chat_history"),
   ("human","{input}")])
 
