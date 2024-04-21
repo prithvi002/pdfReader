@@ -1,7 +1,15 @@
 #Project Title
 "Application to Read Custom PDFs and Answer Questions Using a Language Model"
+## Give the Open-ai key
+
+Open the config.py file and find the Config class. Replace 'your-key' with your OpenAI API key:
+SECRET_KEY = 'your-key'
+
+
 
 ## Running the Backend Application
+
+Before running the backend application, please make sure you have Python installed on your system. You can download and install Python from the official website: [Python Downloads](https://www.python.org/downloads/)
 
 To run the backend application, follow these steps:
 
@@ -27,6 +35,9 @@ To run the backend application, follow these steps:
 
 
 ## Running the Frontend Application
+
+Before running the frontend application, please make sure you have Node.js installed on your system. You can download and install Node.js from the official website: [Node.js Downloads](https://nodejs.org/en/download/)
+
 
 To run the frontend application, follow these steps:
 

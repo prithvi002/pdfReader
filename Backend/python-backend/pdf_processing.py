@@ -1,23 +1,50 @@
-# pdf_processing.py
 import os
 import pdfplumber
+from langchain.document_loaders import DirectoryLoader, PyPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores.faiss import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains import create_retrieval_chain
+from config import Config
 
-def extract_text_from_pdf(folder_path):
-    pdf_file = next((f for f in os.listdir(folder_path) if f.endswith('.pdf')), None)
-    if pdf_file is None:
-        return "No PDF file found."
+def extract_and_create_context(folder_path):
+    loader = DirectoryLoader(path= folder_path, glob="*.pdf", loader_cls=PyPDFLoader)
+    documents = loader.load()
+    splitter = RecursiveCharacterTextSplitter(chunk_size=500,
+                                          chunk_overlap=50)
+    texts = splitter.split_documents(documents)
 
-    pdf_path = os.path.join(folder_path, pdf_file)
-    output_txt_path = os.path.join(folder_path, 'extracted_text.txt')
-    
-    with pdfplumber.open(pdf_path) as pdf:
-        text = []
-        for page in pdf.pages:
-            extracted_text = page.extract_text()
-            if extracted_text:
-                text.append(extracted_text)
+    embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs={'device': 'cpu'}) 
+    db = FAISS.from_documents(texts, embeddings)
+    db.save_local("faiss")
 
-    with open(output_txt_path, 'w', encoding='utf-8') as out_file:
-        out_file.write('\n'.join(text))
-    
-    return f"Text successfully extracted to {output_txt_path}"
+    return db
+
+
+def create_chain(vectorStore):
+  model = ChatOpenAI(
+      model= 'gpt-3.5-turbo',
+      temperature=0.4,
+      openai_api_key=Config.SECRET_KEY
+  )
+
+  prompt = ChatPromptTemplate.from_messages([
+  ("system",), Config.PROMPT,
+  MessagesPlaceholder(variable_name="chat_history"),
+  ("human","{input}")])
+
+  chain = create_stuff_documents_chain(
+      llm=model,
+      prompt=prompt
+  )
+  retriever = vectorStore.as_retriever(search_kwargs={"k": 3})
+
+  retrieval_chain = create_retrieval_chain(
+      retriever,
+      chain)
+  return retrieval_chain

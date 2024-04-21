@@ -1,3 +1,9 @@
 Flask
 Flask-CORS
 pdfplumber
+langchain
+pypdf
+sentence-transformers
+faiss-cpu
+langchain-openai
+

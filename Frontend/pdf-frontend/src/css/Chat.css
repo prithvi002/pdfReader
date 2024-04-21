@@ -21,7 +21,7 @@
 
 .clear-button {
   position: absolute;
-  right: 20px; /* Positioned to the right within the header */
+  right: 20px;
   top: 10px;
   padding: 8px 16px;
   background-color: #dc3545;
@@ -38,7 +38,7 @@
 
 .messages {
   overflow-y: auto;
-  height: 400px; /* Fixed size */
+  height: 400px;
   padding: 8px;
   width: 100%;
   background-color: #e0e0e0;
@@ -92,13 +92,16 @@
   cursor: pointer;
 }
 
-.send-button:hover {
-  background-color: #0056b3;
+.send-button:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
 }
+
 .file-upload {
-  margin-top: 10px; /* Provide spacing between the clear button and the file input */
-  display: flex; /* Use flexbox to arrange items */
-  align-items: center; /* Align items vertically in the center */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 input[type="file"] {
@@ -108,8 +111,8 @@ input[type="file"] {
   border: 2px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
-  width: calc(100% - 16px); /* Adjust width to fit within container */
-  box-sizing: border-box; /* Ensures the padding and border are included in the width */
+  width: calc(100% - 16px);
+  box-sizing: border-box; 
 }
   
 .upload-pdf-button {
@@ -120,19 +123,21 @@ input[type="file"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 10px; /* Adjust margin to align properly with the upload button */
-  flex: 1; /* Occupy 25% of the available space */
+  margin-left: 10px; 
+  flex: 1;
 
 }
 
-.upload-pdf-button:hover {
-  background-color: #0056b3;
+.upload-pdf-button:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
 }
 
 
 
 .file-input {
-  flex: 2; /* Occupy half of the available space */
-  margin-right: 10px; /* Add space between elements */
+  flex: 2; 
+  margin-right: 10px;
 }
 
